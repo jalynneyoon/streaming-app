@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:StreamingApp/StreamingApp.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:Features"
+      name = "Features">
+      <FileRef
+         location = "group:HomeFeature/HomeFeature.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:UserFeature/UserFeature.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Core"
+      name = "Core">
+      <FileRef
+         location = "group:CoreTCA/CoreTCA.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
