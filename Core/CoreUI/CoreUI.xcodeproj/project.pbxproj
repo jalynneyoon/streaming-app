@@ -6,137 +6,130 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		FC29D5442DCF4F2C00666928 /* CoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5432DCF4F2C00666928 /* CoreUI.framework */; };
-		FC29D5452DCF4F2C00666928 /* CoreUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5432DCF4F2C00666928 /* CoreUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FC29D5462DCF4F2C00666928 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FC29D5452DCF4F2C00666928 /* CoreUI.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		FC29D5432DCF4F2C00666928 /* CoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCBE64412DCF3E7200337554 /* StreamingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC29D51D2DCF489300666928 /* CoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FC29D5222DCF489300666928 /* Exceptions for "CoreUI" folder in "CoreUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				CoreUI.h,
+			);
+			target = FC29D51C2DCF489300666928 /* CoreUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FCBE64432DCF3E7200337554 /* StreamingApp */ = {
+		FC29D51F2DCF489300666928 /* CoreUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = StreamingApp;
+			exceptions = (
+				FC29D5222DCF489300666928 /* Exceptions for "CoreUI" folder in "CoreUI" target */,
+			);
+			path = CoreUI;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FCBE643E2DCF3E7200337554 /* Frameworks */ = {
+		FC29D51A2DCF489300666928 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC29D5442DCF4F2C00666928 /* CoreUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FC29D5422DCF4F2C00666928 /* Frameworks */ = {
+		FC29D5132DCF489300666928 = {
 			isa = PBXGroup;
 			children = (
-				FC29D5432DCF4F2C00666928 /* CoreUI.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FCBE64382DCF3E7200337554 = {
-			isa = PBXGroup;
-			children = (
-				FCBE64432DCF3E7200337554 /* StreamingApp */,
-				FC29D5422DCF4F2C00666928 /* Frameworks */,
-				FCBE64422DCF3E7200337554 /* Products */,
+				FC29D51F2DCF489300666928 /* CoreUI */,
+				FC29D51E2DCF489300666928 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FCBE64422DCF3E7200337554 /* Products */ = {
+		FC29D51E2DCF489300666928 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FCBE64412DCF3E7200337554 /* StreamingApp.app */,
+				FC29D51D2DCF489300666928 /* CoreUI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		FC29D5182DCF489300666928 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		FCBE64402DCF3E7200337554 /* StreamingApp */ = {
+		FC29D51C2DCF489300666928 /* CoreUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCBE644F2DCF3E7300337554 /* Build configuration list for PBXNativeTarget "StreamingApp" */;
+			buildConfigurationList = FC29D5232DCF489300666928 /* Build configuration list for PBXNativeTarget "CoreUI" */;
 			buildPhases = (
-				FCBE643D2DCF3E7200337554 /* Sources */,
-				FCBE643E2DCF3E7200337554 /* Frameworks */,
-				FCBE643F2DCF3E7200337554 /* Resources */,
-				FC29D5462DCF4F2C00666928 /* Embed Frameworks */,
+				FC29D5182DCF489300666928 /* Headers */,
+				FC29D5192DCF489300666928 /* Sources */,
+				FC29D51A2DCF489300666928 /* Frameworks */,
+				FC29D51B2DCF489300666928 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FCBE64432DCF3E7200337554 /* StreamingApp */,
+				FC29D51F2DCF489300666928 /* CoreUI */,
 			);
-			name = StreamingApp;
+			name = CoreUI;
 			packageProductDependencies = (
 			);
-			productName = StreamingApp;
-			productReference = FCBE64412DCF3E7200337554 /* StreamingApp.app */;
-			productType = "com.apple.product-type.application";
+			productName = CoreUI;
+			productReference = FC29D51D2DCF489300666928 /* CoreUI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FCBE64392DCF3E7200337554 /* Project object */ = {
+		FC29D5142DCF489300666928 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					FCBE64402DCF3E7200337554 = {
+					FC29D51C2DCF489300666928 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
-			buildConfigurationList = FCBE643C2DCF3E7200337554 /* Build configuration list for PBXProject "StreamingApp" */;
+			buildConfigurationList = FC29D5172DCF489300666928 /* Build configuration list for PBXProject "CoreUI" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = FCBE64382DCF3E7200337554;
+			mainGroup = FC29D5132DCF489300666928;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = FCBE64422DCF3E7200337554 /* Products */;
+			productRefGroup = FC29D51E2DCF489300666928 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FCBE64402DCF3E7200337554 /* StreamingApp */,
+				FC29D51C2DCF489300666928 /* CoreUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FCBE643F2DCF3E7200337554 /* Resources */ = {
+		FC29D51B2DCF489300666928 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -146,7 +139,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FCBE643D2DCF3E7200337554 /* Sources */ = {
+		FC29D5192DCF489300666928 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -156,7 +149,78 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FCBE644D2DCF3E7300337554 /* Debug */ = {
+		FC29D5242DCF489300666928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 59QB82T376;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JohyeonYoon.CoreUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC29D5252DCF489300666928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 59QB82T376;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JohyeonYoon.CoreUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC29D5262DCF489300666928 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -190,6 +254,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -216,10 +281,12 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		FCBE644E2DCF3E7300337554 /* Release */ = {
+		FC29D5272DCF489300666928 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,6 +320,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -272,89 +340,33 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FCBE64502DCF3E7300337554 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StreamingApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 59QB82T376;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JohyeonYoon.StreamingApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FCBE64512DCF3E7300337554 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StreamingApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 59QB82T376;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JohyeonYoon.StreamingApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FCBE643C2DCF3E7200337554 /* Build configuration list for PBXProject "StreamingApp" */ = {
+		FC29D5172DCF489300666928 /* Build configuration list for PBXProject "CoreUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCBE644D2DCF3E7300337554 /* Debug */,
-				FCBE644E2DCF3E7300337554 /* Release */,
+				FC29D5262DCF489300666928 /* Debug */,
+				FC29D5272DCF489300666928 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCBE644F2DCF3E7300337554 /* Build configuration list for PBXNativeTarget "StreamingApp" */ = {
+		FC29D5232DCF489300666928 /* Build configuration list for PBXNativeTarget "CoreUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FCBE64502DCF3E7300337554 /* Debug */,
-				FCBE64512DCF3E7300337554 /* Release */,
+				FC29D5242DCF489300666928 /* Debug */,
+				FC29D5252DCF489300666928 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FCBE64392DCF3E7200337554 /* Project object */;
+	rootObject = FC29D5142DCF489300666928 /* Project object */;
 }

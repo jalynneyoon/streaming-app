@@ -18,6 +18,9 @@
       location = "group:Core"
       name = "Core">
       <FileRef
+         location = "group:CoreUI/CoreUI.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:CoreTCA/CoreTCA.xcodeproj">
       </FileRef>
    </Group>
