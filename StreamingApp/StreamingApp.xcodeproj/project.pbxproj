@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FC29D5442DCF4F2C00666928 /* CoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5432DCF4F2C00666928 /* CoreUI.framework */; };
 		FC29D5452DCF4F2C00666928 /* CoreUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5432DCF4F2C00666928 /* CoreUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC29D55D2DD0AAD000666928 /* HomeFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D55C2DD0AAD000666928 /* HomeFeature.framework */; };
+		FC29D55E2DD0AAD000666928 /* HomeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D55C2DD0AAD000666928 /* HomeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +20,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FC29D55E2DD0AAD000666928 /* HomeFeature.framework in Embed Frameworks */,
 				FC29D5452DCF4F2C00666928 /* CoreUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -27,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		FC29D5432DCF4F2C00666928 /* CoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC29D55C2DD0AAD000666928 /* HomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBE64412DCF3E7200337554 /* StreamingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC29D55D2DD0AAD000666928 /* HomeFeature.framework in Frameworks */,
 				FC29D5442DCF4F2C00666928 /* CoreUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +58,7 @@
 		FC29D5422DCF4F2C00666928 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC29D55C2DD0AAD000666928 /* HomeFeature.framework */,
 				FC29D5432DCF4F2C00666928 /* CoreUI.framework */,
 			);
 			name = Frameworks;

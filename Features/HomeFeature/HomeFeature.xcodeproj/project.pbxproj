@@ -6,8 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FC29D5522DD0A6CB00666928 /* CoreTCA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5502DD0A6CB00666928 /* CoreTCA.framework */; };
+		FC29D5532DD0A6CB00666928 /* CoreTCA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5502DD0A6CB00666928 /* CoreTCA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC29D5682DD0CC8600666928 /* CoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5672DD0CC8600666928 /* CoreUI.framework */; };
+		FC29D5692DD0CC8600666928 /* CoreUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5672DD0CC8600666928 /* CoreUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC29D5562DD0A6CB00666928 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FC29D5532DD0A6CB00666928 /* CoreTCA.framework in Embed Frameworks */,
+				FC29D5692DD0CC8600666928 /* CoreUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		FC29D4F02DCF3F4B00666928 /* HomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC29D5502DD0A6CB00666928 /* CoreTCA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreTCA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC29D5512DD0A6CB00666928 /* CoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC29D5672DD0CC8600666928 /* CoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC29D5522DD0A6CB00666928 /* CoreTCA.framework in Frameworks */,
+				FC29D5682DD0CC8600666928 /* CoreUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				FC29D4F22DCF3F4B00666928 /* HomeFeature */,
+				FC29D54F2DD0A6CB00666928 /* Frameworks */,
 				FC29D4F12DCF3F4B00666928 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +84,16 @@
 				FC29D4F02DCF3F4B00666928 /* HomeFeature.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FC29D54F2DD0A6CB00666928 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC29D5672DD0CC8600666928 /* CoreUI.framework */,
+				FC29D5502DD0A6CB00666928 /* CoreTCA.framework */,
+				FC29D5512DD0A6CB00666928 /* CoreUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +117,7 @@
 				FC29D4EC2DCF3F4B00666928 /* Sources */,
 				FC29D4ED2DCF3F4B00666928 /* Frameworks */,
 				FC29D4EE2DCF3F4B00666928 /* Resources */,
+				FC29D5562DD0A6CB00666928 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,6 +144,7 @@
 				TargetAttributes = {
 					FC29D4EF2DCF3F4B00666928 = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -117,6 +157,8 @@
 			);
 			mainGroup = FC29D4E62DCF3F4B00666928;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FC29D4F12DCF3F4B00666928 /* Products */;
 			projectDirPath = "";
@@ -151,7 +193,9 @@
 		FC29D4F72DCF3F4B00666928 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -168,6 +212,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -176,6 +221,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -184,7 +230,9 @@
 		FC29D4F82DCF3F4B00666928 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -201,6 +249,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_dylib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";

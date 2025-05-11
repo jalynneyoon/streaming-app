@@ -34,7 +34,7 @@ public struct ThumbnailView<Content: View>: View {
     private var badgeView: ThumbnailBadgeView
     
     public init(ratio: AspectRatioType = .portrait,
-                badgeType: BadgeType,
+                badgeType: BadgeType = .none,
                 @ViewBuilder _ content: @escaping () -> Content) {
         self.ratio = ratio
         self.badgeView = ThumbnailBadgeView(badgeType: badgeType)
