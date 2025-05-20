@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RankingCarouselView: View {
     var title: String
+    var programs: [Program] = []
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -20,7 +21,8 @@ struct RankingCarouselView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
-                    ForEach(0..<10, id: \.self) { index in
+                    
+                    ForEach(Array(programs.enumerated()), id: \.element.id) {  index, program in
                         RankingItemView(rank: index)
                             .frame(width: 120.0)
                     }
@@ -32,6 +34,18 @@ struct RankingCarouselView: View {
 }
 
 #Preview(traits: .sizeThatFitsLayout) {
-    RankingCarouselView(title: "이번주 인기작 Top 10")
-        .background(Color.black)
+    var samplePrograms: [Program] = [
+        .init(id: "1", title: "슬기로운 감빵생활"),
+        .init(id: "2", title: "기생충"),
+        .init(id: "3", title: "나는 솔로"),
+        .init(id: "4", title: "Breaking Bad"),
+        .init(id: "5", title: "미션임파서블"),
+    ]
+    
+    RankingCarouselView(
+        title: "이번주 인기작 Top 10",
+        programs: samplePrograms
+    )
+
+    .background(Color.black)
 }
