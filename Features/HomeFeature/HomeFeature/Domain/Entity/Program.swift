@@ -8,8 +8,8 @@
 import Foundation
 import CoreUI
 
-struct Program: Identifiable, Equatable {
-    var id: String
+public struct Program: Identifiable, Equatable {
+    public var id: String
     var title: String
     var badge: BadgeType?
     var imageString: String?

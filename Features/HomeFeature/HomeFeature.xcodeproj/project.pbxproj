@@ -11,6 +11,10 @@
 		FC29D5532DD0A6CB00666928 /* CoreTCA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5502DD0A6CB00666928 /* CoreTCA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC29D5682DD0CC8600666928 /* CoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5672DD0CC8600666928 /* CoreUI.framework */; };
 		FC29D5692DD0CC8600666928 /* CoreUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5672DD0CC8600666928 /* CoreUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC9571B92DDF50A500C0807C /* CoreNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9571B82DDF50A500C0807C /* CoreNetwork.framework */; };
+		FC9571BA2DDF50A500C0807C /* CoreNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC9571B82DDF50A500C0807C /* CoreNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC9571C72DDF56F400C0807C /* CoreEnvironment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9571C62DDF56F400C0807C /* CoreEnvironment.framework */; };
+		FC9571C82DDF56F400C0807C /* CoreEnvironment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC9571C62DDF56F400C0807C /* CoreEnvironment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,6 +26,8 @@
 			files = (
 				FC29D5532DD0A6CB00666928 /* CoreTCA.framework in Embed Frameworks */,
 				FC29D5692DD0CC8600666928 /* CoreUI.framework in Embed Frameworks */,
+				FC9571BA2DDF50A500C0807C /* CoreNetwork.framework in Embed Frameworks */,
+				FC9571C82DDF56F400C0807C /* CoreEnvironment.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,6 +39,8 @@
 		FC29D5502DD0A6CB00666928 /* CoreTCA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreTCA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC29D5512DD0A6CB00666928 /* CoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC29D5672DD0CC8600666928 /* CoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC9571B82DDF50A500C0807C /* CoreNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC9571C62DDF56F400C0807C /* CoreEnvironment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreEnvironment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -63,6 +71,8 @@
 			files = (
 				FC29D5522DD0A6CB00666928 /* CoreTCA.framework in Frameworks */,
 				FC29D5682DD0CC8600666928 /* CoreUI.framework in Frameworks */,
+				FC9571B92DDF50A500C0807C /* CoreNetwork.framework in Frameworks */,
+				FC9571C72DDF56F400C0807C /* CoreEnvironment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +99,8 @@
 		FC29D54F2DD0A6CB00666928 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC9571C62DDF56F400C0807C /* CoreEnvironment.framework */,
+				FC9571B82DDF50A500C0807C /* CoreNetwork.framework */,
 				FC29D5672DD0CC8600666928 /* CoreUI.framework */,
 				FC29D5502DD0A6CB00666928 /* CoreTCA.framework */,
 				FC29D5512DD0A6CB00666928 /* CoreUI.framework */,

@@ -9,9 +9,12 @@ import ComposableArchitecture
 
 @Reducer
 public struct HomeFeature {
+    
+    public init() { }
+    
     public struct State: Equatable {
-        var weeklyBest = WeeklyBestSectionFeature.State()
-        
+        public init() { }
+        var weeklyBest = WeeklyBestSectionFeature.State(programs: [])
     }
 
     public enum Action {

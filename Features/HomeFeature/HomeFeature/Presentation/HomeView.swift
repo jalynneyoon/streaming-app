@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
-public struct HomeView: View {
+struct HomeView: View {
     let state: HomeFeature.State
     
-    public init(state: HomeFeature.State) {
+    init(state: HomeFeature.State) {
         self.state = state
     }
     

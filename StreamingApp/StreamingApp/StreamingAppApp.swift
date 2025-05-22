@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+import HomeFeature
+import ComposableArchitecture
 
 @main
 struct StreamingAppApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeViewContainer(
+                store: Store(
+                    initialState: HomeFeature.State(),
+                    reducer: {
+                        HomeFeature()
+                    }
+                )
+            )
+           
         }
     }
 }

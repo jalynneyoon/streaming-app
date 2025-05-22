@@ -8,11 +8,16 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct HomeViewContainer: View {
+public struct HomeViewContainer: View {
     let store: StoreOf<HomeFeature>
 
-    var body: some View {
+    public init(store: StoreOf<HomeFeature>) {
+        self.store = store
+    }
+    
+    public var body: some View {
         WithViewStore(store, observe: { $0 } ) { viewStore in
+            WeeklyBestSectionView(store: store.scope(state: \.weeklyBest, action: \.weeklyBest))
             HomeView(state: viewStore.state)
         }
     }

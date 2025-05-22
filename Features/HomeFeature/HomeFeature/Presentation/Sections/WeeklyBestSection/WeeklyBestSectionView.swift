@@ -13,6 +13,9 @@ struct WeeklyBestSectionView: View {
     var body: some View {
         WithViewStore(store, observe: { $0 } ) { viewStore in
             RankingCarouselView(title: "이번주 인기작 Top 10", programs: viewStore.programs)
+                .onAppear {
+                    viewStore.send(.onAppear)
+                }
         }
     }
 }

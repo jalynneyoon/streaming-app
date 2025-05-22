@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC29D5442DCF4F2C00666928 /* CoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5432DCF4F2C00666928 /* CoreUI.framework */; };
-		FC29D5452DCF4F2C00666928 /* CoreUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D5432DCF4F2C00666928 /* CoreUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FC29D55D2DD0AAD000666928 /* HomeFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D55C2DD0AAD000666928 /* HomeFeature.framework */; };
-		FC29D55E2DD0AAD000666928 /* HomeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D55C2DD0AAD000666928 /* HomeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC9571BC2DDF524100C0807C /* CoreEnvironment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9571BB2DDF524100C0807C /* CoreEnvironment.framework */; };
+		FC9571BD2DDF524100C0807C /* CoreEnvironment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC9571BB2DDF524100C0807C /* CoreEnvironment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC9571CE2DDF5A2A00C0807C /* HomeFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D55C2DD0AAD000666928 /* HomeFeature.framework */; };
+		FC9571CF2DDF5A2A00C0807C /* HomeFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC29D55C2DD0AAD000666928 /* HomeFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC9571D12DDF5B2E00C0807C /* CoreTCA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9571D02DDF5B2E00C0807C /* CoreTCA.framework */; };
+		FC9571D22DDF5B2E00C0807C /* CoreTCA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC9571D02DDF5B2E00C0807C /* CoreTCA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,8 +22,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FC29D55E2DD0AAD000666928 /* HomeFeature.framework in Embed Frameworks */,
-				FC29D5452DCF4F2C00666928 /* CoreUI.framework in Embed Frameworks */,
+				FC9571CF2DDF5A2A00C0807C /* HomeFeature.framework in Embed Frameworks */,
+				FC9571BD2DDF524100C0807C /* CoreEnvironment.framework in Embed Frameworks */,
+				FC9571D22DDF5B2E00C0807C /* CoreTCA.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,12 +34,27 @@
 /* Begin PBXFileReference section */
 		FC29D5432DCF4F2C00666928 /* CoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC29D55C2DD0AAD000666928 /* HomeFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HomeFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC9571BB2DDF524100C0807C /* CoreEnvironment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreEnvironment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC9571D02DDF5B2E00C0807C /* CoreTCA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreTCA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBE64412DCF3E7200337554 /* StreamingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FC15094D2DDF68E300A6A437 /* Exceptions for "StreamingApp" folder in "StreamingApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FCBE64402DCF3E7200337554 /* StreamingApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FCBE64432DCF3E7200337554 /* StreamingApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FC15094D2DDF68E300A6A437 /* Exceptions for "StreamingApp" folder in "StreamingApp" target */,
+			);
 			path = StreamingApp;
 			sourceTree = "<group>";
 		};
@@ -47,8 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC29D55D2DD0AAD000666928 /* HomeFeature.framework in Frameworks */,
-				FC29D5442DCF4F2C00666928 /* CoreUI.framework in Frameworks */,
+				FC9571CE2DDF5A2A00C0807C /* HomeFeature.framework in Frameworks */,
+				FC9571BC2DDF524100C0807C /* CoreEnvironment.framework in Frameworks */,
+				FC9571D12DDF5B2E00C0807C /* CoreTCA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +77,8 @@
 		FC29D5422DCF4F2C00666928 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC9571D02DDF5B2E00C0807C /* CoreTCA.framework */,
+				FC9571BB2DDF524100C0807C /* CoreEnvironment.framework */,
 				FC29D55C2DD0AAD000666928 /* HomeFeature.framework */,
 				FC29D5432DCF4F2C00666928 /* CoreUI.framework */,
 			);
@@ -164,6 +185,8 @@
 /* Begin XCBuildConfiguration section */
 		FCBE644D2DCF3E7300337554 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = FCBE64432DCF3E7200337554 /* StreamingApp */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -283,6 +306,8 @@
 		};
 		FCBE64502DCF3E7300337554 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = FCBE64432DCF3E7200337554 /* StreamingApp */;
+			baseConfigurationReferenceRelativePath = Secrets.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +317,7 @@
 				DEVELOPMENT_TEAM = 59QB82T376;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StreamingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +347,7 @@
 				DEVELOPMENT_TEAM = 59QB82T376;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StreamingApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
