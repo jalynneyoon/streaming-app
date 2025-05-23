@@ -6,86 +6,54 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		FC6840B92DE090FB00C1475F /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6840B82DE090FB00C1475F /* Shared.framework */; };
-		FC6840BA2DE090FB00C1475F /* Shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC6840B82DE090FB00C1475F /* Shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FC9571A22DDE223600C0807C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FC9571A12DDE223600C0807C /* Alamofire */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		FC6840BB2DE090FB00C1475F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FC6840BA2DE090FB00C1475F /* Shared.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		FC6840B82DE090FB00C1475F /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC9571952DDE219E00C0807C /* CoreNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC6840A62DE0906400C1475F /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		FC95719A2DDE219E00C0807C /* Exceptions for "CoreNetwork" folder in "CoreNetwork" target */ = {
+		FC6840AB2DE0906400C1475F /* Exceptions for "Shared" folder in "Shared" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			publicHeaders = (
-				CoreNetwork.h,
+				Shared.h,
 			);
-			target = FC9571942DDE219E00C0807C /* CoreNetwork */;
+			target = FC6840A52DE0906400C1475F /* Shared */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FC9571972DDE219E00C0807C /* CoreNetwork */ = {
+		FC6840A82DE0906400C1475F /* Shared */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				FC95719A2DDE219E00C0807C /* Exceptions for "CoreNetwork" folder in "CoreNetwork" target */,
+				FC6840AB2DE0906400C1475F /* Exceptions for "Shared" folder in "Shared" target */,
 			);
-			path = CoreNetwork;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FC9571922DDE219E00C0807C /* Frameworks */ = {
+		FC6840A32DE0906400C1475F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC9571A22DDE223600C0807C /* Alamofire in Frameworks */,
-				FC6840B92DE090FB00C1475F /* Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FC6840B72DE090FB00C1475F /* Frameworks */ = {
+		FC68409C2DE0906400C1475F = {
 			isa = PBXGroup;
 			children = (
-				FC6840B82DE090FB00C1475F /* Shared.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FC95718B2DDE219E00C0807C = {
-			isa = PBXGroup;
-			children = (
-				FC9571972DDE219E00C0807C /* CoreNetwork */,
-				FC6840B72DE090FB00C1475F /* Frameworks */,
-				FC9571962DDE219E00C0807C /* Products */,
+				FC6840A82DE0906400C1475F /* Shared */,
+				FC6840A72DE0906400C1475F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FC9571962DDE219E00C0807C /* Products */ = {
+		FC6840A72DE0906400C1475F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC9571952DDE219E00C0807C /* CoreNetwork.framework */,
+				FC6840A62DE0906400C1475F /* Shared.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +61,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		FC9571902DDE219E00C0807C /* Headers */ = {
+		FC6840A12DE0906400C1475F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -103,70 +71,65 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		FC9571942DDE219E00C0807C /* CoreNetwork */ = {
+		FC6840A52DE0906400C1475F /* Shared */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC95719B2DDE219E00C0807C /* Build configuration list for PBXNativeTarget "CoreNetwork" */;
+			buildConfigurationList = FC6840AC2DE0906400C1475F /* Build configuration list for PBXNativeTarget "Shared" */;
 			buildPhases = (
-				FC9571902DDE219E00C0807C /* Headers */,
-				FC9571912DDE219E00C0807C /* Sources */,
-				FC9571922DDE219E00C0807C /* Frameworks */,
-				FC9571932DDE219E00C0807C /* Resources */,
-				FC6840BB2DE090FB00C1475F /* Embed Frameworks */,
+				FC6840A12DE0906400C1475F /* Headers */,
+				FC6840A22DE0906400C1475F /* Sources */,
+				FC6840A32DE0906400C1475F /* Frameworks */,
+				FC6840A42DE0906400C1475F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FC9571972DDE219E00C0807C /* CoreNetwork */,
+				FC6840A82DE0906400C1475F /* Shared */,
 			);
-			name = CoreNetwork;
+			name = Shared;
 			packageProductDependencies = (
-				FC9571A12DDE223600C0807C /* Alamofire */,
 			);
-			productName = CoreNetwork;
-			productReference = FC9571952DDE219E00C0807C /* CoreNetwork.framework */;
+			productName = Shared;
+			productReference = FC6840A62DE0906400C1475F /* Shared.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FC95718C2DDE219E00C0807C /* Project object */ = {
+		FC68409D2DE0906400C1475F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					FC9571942DDE219E00C0807C = {
+					FC6840A52DE0906400C1475F = {
 						CreatedOnToolsVersion = 16.2;
 						LastSwiftMigration = 1620;
 					};
 				};
 			};
-			buildConfigurationList = FC95718F2DDE219E00C0807C /* Build configuration list for PBXProject "CoreNetwork" */;
+			buildConfigurationList = FC6840A02DE0906400C1475F /* Build configuration list for PBXProject "Shared" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = FC95718B2DDE219E00C0807C;
+			mainGroup = FC68409C2DE0906400C1475F;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				FC9571A02DDE223600C0807C /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = FC9571962DDE219E00C0807C /* Products */;
+			productRefGroup = FC6840A72DE0906400C1475F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC9571942DDE219E00C0807C /* CoreNetwork */,
+				FC6840A52DE0906400C1475F /* Shared */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FC9571932DDE219E00C0807C /* Resources */ = {
+		FC6840A42DE0906400C1475F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,7 +139,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FC9571912DDE219E00C0807C /* Sources */ = {
+		FC6840A22DE0906400C1475F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -186,7 +149,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FC95719C2DDE219E00C0807C /* Debug */ = {
+		FC6840AD2DE0906400C1475F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -210,7 +173,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.JohyeonYoon.CoreNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JohyeonYoon.Shared;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -221,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		FC95719D2DDE219E00C0807C /* Release */ = {
+		FC6840AE2DE0906400C1475F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -245,7 +208,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.JohyeonYoon.CoreNetwork;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JohyeonYoon.Shared;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -255,7 +218,7 @@
 			};
 			name = Release;
 		};
-		FC95719E2DDE219E00C0807C /* Debug */ = {
+		FC6840AF2DE0906400C1475F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -321,7 +284,7 @@
 			};
 			name = Debug;
 		};
-		FC95719F2DDE219E00C0807C /* Release */ = {
+		FC6840B02DE0906400C1475F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -383,44 +346,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC95718F2DDE219E00C0807C /* Build configuration list for PBXProject "CoreNetwork" */ = {
+		FC6840A02DE0906400C1475F /* Build configuration list for PBXProject "Shared" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC95719E2DDE219E00C0807C /* Debug */,
-				FC95719F2DDE219E00C0807C /* Release */,
+				FC6840AF2DE0906400C1475F /* Debug */,
+				FC6840B02DE0906400C1475F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC95719B2DDE219E00C0807C /* Build configuration list for PBXNativeTarget "CoreNetwork" */ = {
+		FC6840AC2DE0906400C1475F /* Build configuration list for PBXNativeTarget "Shared" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC95719C2DDE219E00C0807C /* Debug */,
-				FC95719D2DDE219E00C0807C /* Release */,
+				FC6840AD2DE0906400C1475F /* Debug */,
+				FC6840AE2DE0906400C1475F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		FC9571A02DDE223600C0807C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.10.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FC9571A12DDE223600C0807C /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FC9571A02DDE223600C0807C /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = FC95718C2DDE219E00C0807C /* Project object */;
+	rootObject = FC68409D2DE0906400C1475F /* Project object */;
 }

@@ -30,4 +30,11 @@
          location = "group:CoreTCA/CoreTCA.xcodeproj">
       </FileRef>
    </Group>
+   <Group
+      location = "group:Shared"
+      name = "Shared">
+      <FileRef
+         location = "container:Core/Shared/Shared.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>

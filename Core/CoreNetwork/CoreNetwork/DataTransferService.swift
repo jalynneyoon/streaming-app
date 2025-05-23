@@ -7,6 +7,7 @@
 
 import Foundation
 internal import Alamofire
+import Shared
 
 public protocol DataTransferService: Sendable {
     @discardableResult
@@ -19,7 +20,7 @@ public struct DefaultDataTransferService: DataTransferService {
     
     public func request<D: ResponseRequestable> (with httpRequest: D) async -> Result<D.Response, APIError> {
         guard let urlRequest: URLRequest = try? httpRequest.urlRequest() else { return .failure(.invalidURLRequest) }
-        debugPrint("API 요청: \(urlRequest)")
+        log("API 요청: \(urlRequest)")
         AF.request(urlRequest).response { data in
             
         }
@@ -30,8 +31,8 @@ public struct DefaultDataTransferService: DataTransferService {
             return self.handleError(for: response)
         }
         
-        debugPrint("API응답 [\(String(describing: D.Response.self))] \n")
-        data.printJson()
+        log("API응답 [\(String(describing: D.Response.self))]")
+        data.logData()
         
         if let apiResponse = await dataTask.response.value {
             let isHTTPRequestSucceed = (statusCode == 200 || statusCode == 201 || statusCode == 204)
@@ -54,22 +55,5 @@ public struct DefaultDataTransferService: DataTransferService {
         }
         
         return .failure(.unknown)
-    }
-}
-
-extension Data {
-    
-    func printJson() {
-        do {
-            let json = try JSONSerialization.jsonObject(with: self, options: [])
-            let data = try JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
-            guard let jsonString = String(data: data, encoding: .utf8) else {
-                debugPrint("Inavlid data")
-                return
-            }
-            debugPrint(jsonString)
-        } catch {
-            debugPrint("Error: \(error.localizedDescription)")
-        }
     }
 }
