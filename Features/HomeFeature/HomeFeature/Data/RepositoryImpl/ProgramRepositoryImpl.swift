@@ -21,13 +21,19 @@ final class ProgramRepositoryImpl: WeeklyBestProviding {
     }
     
     func fetchWeeklyBest() async throws -> [Program] {
-        let headers: [String: String] = ["Authorization" : "Bearer " + (tmdbAPIKey)]
-        let request = HttpRequest<DTO>(baseURL: "https://api.themoviedb.org/movie", headerParameters: headers, method: .get, queryParameters: [:])
-        await self.dataTransferService.request(with: request)
-        return []
+        let request = HttpRequest(
+            baseURL: "https://api.themoviedb.org/3/trending/all/week",
+            headerParameters: ["Authorization" : "Bearer " + (tmdbAPIKey)],
+            method: .get,
+            queryParameters: [:]
+        )
+        
+        let result: Result<WeeklyBesListDTO, APIError> = await self.dataTransferService.request(with: request)
+        switch result {
+        case .success(let response):
+            return response.toDomain()
+        case .failure(let error):
+            throw error
+        }
     }
-}
-
-struct DTO: Codable {
-    
 }

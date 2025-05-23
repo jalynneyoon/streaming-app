@@ -11,13 +11,13 @@ import CoreUI
 struct RankingItemView: View {
     
     var rank: Int = 0
+    var program: Program?
     
     var body: some View {
         
         ZStack(alignment: .bottomLeading) {
             ThumbnailView(badgeType: .exclusive("시리즈")) {
-                Rectangle()
-                    .fill(.gray)
+                KFImageView(urlString: program?.imageString)
             }
             .offset(x: 20)
             .padding(.trailing, 20)

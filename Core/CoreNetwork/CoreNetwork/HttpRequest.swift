@@ -6,7 +6,7 @@
 //
 import Foundation
 
-public struct HttpRequest<Response: Decodable>: ResponseRequestable {
+public struct HttpRequest: Requestable {
     public var baseURL: String
     public var headerParameters: [String: String]?
     public var method: HTTPMethodType
@@ -34,10 +34,6 @@ public enum HTTPMethodType: String {
     case put = "PUT"
     case patch = "PATCH"
     case delete = "DELETE"
-}
-
-public protocol ResponseRequestable: Requestable {
-    associatedtype Response: Decodable
 }
 
 public protocol Requestable {

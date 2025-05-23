@@ -11,35 +11,35 @@ import Shared
 
 public protocol DataTransferService: Sendable {
     @discardableResult
-    func request<D: ResponseRequestable> (with httpRequest: D) async -> Result<D.Response, APIError>
+    func request<D: Decodable> (with httpRequest: any Requestable) async -> Result<D, APIError>
 }
 
 public struct DefaultDataTransferService: DataTransferService {
     
     public init() {}
     
-    public func request<D: ResponseRequestable> (with httpRequest: D) async -> Result<D.Response, APIError> {
+    public func request<D: Decodable> (with httpRequest: any Requestable) async -> Result<D, APIError> {
         guard let urlRequest: URLRequest = try? httpRequest.urlRequest() else { return .failure(.invalidURLRequest) }
         log("API 요청: \(urlRequest)")
-        AF.request(urlRequest).response { data in
-            
-        }
-        let dataTask = AF.request(urlRequest).serializingDecodable(D.Response.self, decoder: JSONDecoder())
+        
+        let decoder = JSONDecoder()
+//        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        
+        let dataTask = AF.request(urlRequest).serializingDecodable(D.self, decoder: decoder)
         
         let response = await dataTask.response
         guard let data = response.data, let statusCode = response.response?.statusCode else {
             return self.handleError(for: response)
         }
         
-        log("API응답 [\(String(describing: D.Response.self))]")
+        log("API응답 [\(String(describing: D.self))]")
         data.logData()
         
-        if let apiResponse = await dataTask.response.value {
-            let isHTTPRequestSucceed = (statusCode == 200 || statusCode == 201 || statusCode == 204)
+        let apiResponse = await dataTask.response.value
+        let isHTTPRequestSucceed = (statusCode == 200 || statusCode == 201 || statusCode == 204)
             
-            if (isHTTPRequestSucceed) {
-                return .success(apiResponse)
-            }
+        if let apiResponse, (isHTTPRequestSucceed) {
+            return .success(apiResponse)
         }
         
         return self.handleError(for: response)

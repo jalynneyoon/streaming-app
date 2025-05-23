@@ -21,6 +21,6 @@ struct DefaultFetchWeeklyBestUseCase: FetchWeeklyBestUseCase {
     }
     
     func execute() async throws -> [Program] {
-        return try await self.repository.fetchWeeklyBest()
+        return try await self.repository.fetchWeeklyBest().filter { $0.imageString != nil }
     }
 }

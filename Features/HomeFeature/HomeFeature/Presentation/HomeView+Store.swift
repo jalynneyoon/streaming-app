@@ -17,8 +17,22 @@ public struct HomeViewContainer: View {
     
     public var body: some View {
         WithViewStore(store, observe: { $0 } ) { viewStore in
-            WeeklyBestSectionView(store: store.scope(state: \.weeklyBest, action: \.weeklyBest))
-            HomeView(state: viewStore.state)
+            ZStack {
+                Color.black
+                    .ignoresSafeArea(edges: .all)
+                WeeklyBestSectionView(store: store.scope(state: \.weeklyBest, action: \.weeklyBest))
+            }
         }
     }
+}
+
+#Preview {
+    HomeViewContainer(
+        store: Store(
+            initialState: HomeFeature.State(),
+            reducer: {
+                HomeFeature()
+            }
+        )
+    )
 }

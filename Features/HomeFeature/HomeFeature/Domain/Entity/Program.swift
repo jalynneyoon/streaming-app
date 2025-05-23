@@ -9,7 +9,7 @@ import Foundation
 import CoreUI
 
 public struct Program: Identifiable, Equatable {
-    public var id: String
+    public var id: Int
     var title: String
     var badge: BadgeType?
     var imageString: String?
