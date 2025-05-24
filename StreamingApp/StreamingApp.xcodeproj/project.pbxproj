@@ -50,6 +50,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		FC6A82A82DE1EFBA00E846B5 /* HomeFeatureTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = HomeFeatureTests;
+			sourceTree = "<group>";
+		};
 		FCBE64432DCF3E7200337554 /* StreamingApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -89,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				FCBE64432DCF3E7200337554 /* StreamingApp */,
+				FC6A82A82DE1EFBA00E846B5 /* HomeFeatureTests */,
 				FC29D5422DCF4F2C00666928 /* Frameworks */,
 				FCBE64422DCF3E7200337554 /* Products */,
 			);
