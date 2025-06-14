@@ -9,7 +9,7 @@ import Foundation
 import CoreNetwork
 import ComposableArchitecture
 
-final class ProgramRepositoryImpl: WeeklyBestProviding {
+final class ProgramRepositoryImpl: WeeklyBestProviding, KeepWatchingProviding {
 
     private let tmdbAPIKey: String
     private let dataTransferService: DataTransferService
@@ -34,6 +34,22 @@ final class ProgramRepositoryImpl: WeeklyBestProviding {
             return response.toDomain()
         case .failure(let error):
             throw error
+        }
+    }
+    
+    func fetchKeepWatching() async throws -> [Program] {
+        
+        guard let url = Bundle(for: ProgramRepositoryImpl.self).url(forResource: "keep_watching_dummy", withExtension: "json") else {
+            return []
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let decoder = JSONDecoder()
+            let programs = try decoder.decode(KeepWatchingListDTO.self, from: data)
+            return programs.toDomain()
+        } catch {
+            return []
         }
     }
 }

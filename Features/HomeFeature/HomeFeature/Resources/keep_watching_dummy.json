@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "id": 1087891,
+      "backdrop_path": "/6van4BavoNXaZhCPdzLHNQ4Uc8H.jpg",
+      "adult": false,
+      "original_title": "The Amateur",
+      "media_type": "movie",
+      "genre_ids": [
+        53,
+        28
+      ],
+      "vote_average": 6.853,
+      "popularity": 482.06,
+      "poster_path": "/SNEoUInCa5fAgwuEBMIMBGvkkh.jpg",
+      "title": "The Amateur",
+      "overview": "After his life is turned upside down when his wife is killed in a London terrorist attack, a brilliant but introverted CIA decoder takes matters into his own hands when his supervisors refuse to take action.",
+      "original_language": "en",
+      "vote_count": 395,
+      "release_date": "2025-04-09",
+      "video": false
+    },
+    {
+      "id": 1376434,
+      "backdrop_path": "/a3F9cXjRH488qcOqFmFZwqawBMU.jpg",
+      "adult": false,
+      "original_title": "Predator: Killer of Killers",
+      "media_type": "movie",
+      "genre_ids": [
+        16,
+        28,
+        878
+      ],
+      "vote_average": 7.994,
+      "popularity": 684.3914,
+      "poster_path": "/lbimIPTVsSlnmqSW5ngEsUxtHLM.jpg",
+      "title": "Predator: Killer of Killers",
+      "overview": "While three of the fiercest warriors in human history—a Viking raider, a ninja in feudal Japan, and a WWII pilot—are killers in their own right, they are merely prey for their new opponent: the ultimate killer of killers.",
+      "original_language": "en",
+      "vote_count": 421,
+      "release_date": "2025-06-05",
+      "video": false
+    }
+  ]
+}
