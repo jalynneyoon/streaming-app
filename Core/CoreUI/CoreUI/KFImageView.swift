@@ -8,18 +8,23 @@
 import SwiftUI
 import Kingfisher
 
-public struct KFImageView: View {
+public struct KFImageView<P: View>: View {
     let url: URL?
-    let placeholder: Image
-
-    public init(urlString: String?, placeholder: Image = Image(systemName: "photo")) {
+    private var placeholder: () -> P
+    
+    public init(
+        urlString: String?,
+        @ViewBuilder _ placeholder: @escaping () -> P) {
         self.url = URL(string: urlString ?? "")
         self.placeholder = placeholder
     }
-
+    
     public var body: some View {
         KFImage(url)
-            .placeholder { placeholder.background(Color.gray) }
+            .placeholder {
+                placeholder()
+                    .background(Color.gray)
+            }
             .resizable()
             .aspectRatio(contentMode: .fill)
     }

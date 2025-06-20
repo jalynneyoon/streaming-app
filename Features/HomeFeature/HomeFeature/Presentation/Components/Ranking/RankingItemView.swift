@@ -17,7 +17,10 @@ struct RankingItemView: View {
         
         ZStack(alignment: .bottomLeading) {
             ThumbnailView(badgeType: .exclusive("시리즈")) {
-                KFImageView(urlString: program?.imageString)
+                KFImageView(urlString: program?.imageString) {
+                    Text(program?.title ?? "")
+                        .foregroundStyle(Color.white)
+                }
             }
             .offset(x: 20)
             .padding(.trailing, 20)
